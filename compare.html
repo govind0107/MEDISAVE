@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <title>Compare | MediSave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/compare.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">MediSave</a>
+          <div class="navbar-nav">
+            <a href="index.html">home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="blog.html">Blogs</a>
+          </div>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="container">
+          <h1 class="banner-title">
+            <span>Compare Hospitals and Prices</span>
+          </h1>
+          <p>
+            Compare Prices from different Hospitals in your city and save on
+            your medicare costs!
+          </p>
+          <form action="#table-section">
+            <input
+              type="text"
+              id="myInput"
+              class="search-input"
+              placeholder="Enter the city..."
+              onkeyup="searchFun()"
+            />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section id="table-section">
+      <table id="myTable">
+        <caption class="caption-text">
+          Available Hospitals
+        </caption>
+        <tr>
+          <th style="width: 20%">City</th>
+          <th style="width: 30%">Hospital Name</th>
+          <th style="width: 40%">Hospital Address</th>
+          <th style="width: 10%">Avg. Cost</th>
+        </tr>
+        <tr>
+          <td id="city">BIRMINGHAM</td>
+          <td>UNIVERSITY OF ALABAMA HOSPITAL</td>
+          <td>619 SOUTH 19TH STREET</td>
+          <td>$5858.50</td>
+        </tr>
+        <tr>
+          <td id="city">BIRMINGHAM</td>
+          <td>ST VINCENT'S EAST</td>
+          <td>50 MEDICAL PARK EAST DRIVE</td>
+          <td>$4129.16</td>
+        </tr>
+        <tr>
+          <td id="city">DOTHAN</td>
+          <td>SOUTHEAST ALABAMA MEDICAL CENTER</td>
+          <td>1108 ROSS CLARK CIRCLE</td>
+          <td>$4763.73</td>
+        </tr>
+        <tr>
+          <td id="city">BOAZ</td>
+          <td>MARSHALL MEDICAL CENTER SOUTH</td>
+          <td>2505 U S HIGHWAY 431 NORTH</td>
+          <td>$4976.71</td>
+        </tr>
+        <tr>
+          <td id="city">BIRMINGHAM</td>
+          <td>BAPTIST MEDICAL CENTER-PRINCETON</td>
+          <td>701 PRINCETON AVENUE SOUTHWEST</td>
+          <td>$4962.45</td>
+        </tr>
+        <tr>
+          <td id="city">FLORENCE</td>
+          <td>ELIZA COFFEE MEMORIAL HOSPITAL</td>
+          <td>205 MARENGO STREET</td>
+          <td>$4453.79</td>
+        </tr>
+        <tr>
+          <td id="city">ALABASTER</td>
+          <td>SHELBY BAPTIST MEDICAL CENTER</td>
+          <td>1000 FIRST STREET NORTH</td>
+          <td>$4851.44</td>
+        </tr>
+        <tr>
+          <td id="city">MONTGOMERY</td>
+          <td>BAPTIST MEDICAL CENTER SOUTH</td>
+          <td>2105 EAST SOUTH BOULEVARD</td>
+          <td>$5374.14</td>
+        </tr>
+        <tr>
+          <td id="city">BIRMINGHAM</td>
+          <td>ST VINCENT'S BIRMINGHAM</td>
+          <td>810 ST VINCENT'S DRIVE</td>
+          <td>$4186.02</td>
+        </tr>
+        <tr>
+          <td id="city">OPELIKA</td>
+          <td>EAST ALABAMA MEDICAL CENTER AND SNF</td>
+          <td>2000 PEPPERELL PARKWAY</td>
+          <td>$4761.41</td>
+        </tr>
+        <tr>
+          <td id="city">HUNTSVILLE</td>
+          <td>HUNTSVILLE HOSPITAL</td>
+          <td>101 SIVLEY RD</td>
+          <td>$5228.40</td>
+        </tr>
+        <tr>
+          <td id="city">GADSDEN</td>
+          <td>GADSDEN REGIONAL MEDICAL CENTER</td>
+          <td>1007 GOODYEAR AVENUE</td>
+          <td>$4386.94</td>
+        </tr>
+        <tr>
+          <td id="city">BIRMINGHAM</td>
+          <td>TRINITY MEDICAL CENTER</td>
+          <td>800 MONTCLAIR RD</td>
+          <td>$4471.68</td>
+        </tr>
+        <tr>
+          <td id="city">GADSDEN</td>
+          <td>RIVERVIEW REGIONAL MEDICAL CENTER</td>
+          <td>600 SOUTH THIRD STREET</td>
+          <td>$4493.57</td>
+        </tr>
+        <tr=>
+          <td id="city">DOTHAN</td>
+          <td>FLOWERS HOSPITAL</td>
+          <td>4370 WEST MAIN STREET</td>
+          <td>$4408.20</td>
+        </tr>
+        <tr>
+          <td id="city">ANNISTON</td>
+          <td>NORTHEAST ALABAMA REGIONAL MED CENTER</td>
+          <td>400 EAST 10TH STREET</td>
+          <td>$4376.23</td>
+        </tr>
+        <tr>
+          <td id="city">BIRMINGHAM</td>
+          <td>BROOKWOOD MEDICAL CENTER</td>
+          <td>2010 BROOKWOOD MEDICAL CENTER DRIVE</td>
+          <td>$3944.42</td>
+        </tr>
+        <tr>
+          <td id="city">PHOENIX</td>
+          <td id="city">BANNER GOOD SAMARITAN MEDICAL CENTER</td>
+          <td>1111 EAST MCDOWELL ROAD</td>
+          <td>$6951.45</td>
+        </tr>
+        <tr>
+          <td id="city">TUCSON</td>
+          <td>TUCSON MEDICAL CENTER</td>
+          <td>5301 EAST GRANT ROAD</td>
+          <td>$5764.87</td>
+        </tr>
+        <tr>
+          <td id="city">PHOENIX</td>
+          <td>ST JOSEPH'S HOSPITAL AND MEDICAL CENTER</td>
+          <td>350 WEST THOMAS ROAD</td>
+          <td>$7422.66</td>
+        </tr>
+        <tr>
+          <td id="city">PHOENIX</td>
+          <td>PHOENIX BAPTIST HOSPITAL</td>
+          <td>2000 WEST BETHANY HOME ROAD</td>
+          <td>$6541.92</td>
+        </tr>
+        <tr>
+          <td id="city">TUCSON</td>
+          <td>CARONDELET ST MARYS HOSPITAL</td>
+          <td>1601 WEST ST MARY'S ROAD</td>
+          <td>$5379.83</td>
+        </tr>
+        <tr>
+          <td id="city">TUCSON</td>
+          <td>CARONDELET ST JOSEPHS HOSPITAL</td>
+          <td>350 NORTH WILMOT ROAD</td>
+          <td>$4903.33</td>
+        </tr>
+        <tr>
+          <td id="city">PHOENIX</td>
+          <td>JOHN C LINCOLN DEER VALLEY HOSPITAL</td>
+          <td>19829 NORTH 27TH AVENUE</td>
+          <td>$5204.54</td>
+        </tr>
+        <tr>
+          <td id="city">TUCSON</td>
+          <td>CARONDELET HEART AND VASCULAR INSTITUTE</td>
+          <td>4888 NORTH STONE AVENUE</td>
+          <td>$3592.85</td>
+        </tr>
+        <tr>
+          <td>SUN CITY</td>
+          <td>BANNER BOSWELL MEDICAL CENTER</td>
+          <td>10401 WEST THUNDERBIRD BOULEVARD</td>
+          <td>$4951.90</td>
+        </tr>
+      </table>
+    </section>
+    
+    <script>
+    const searchFun = () =>{
+      let filter = document.getElementById('myInput').value.toUpperCase();
+      let myTable = document.getElementById('myTable');
+      let tr = document.getElementsByTagName("tr");
+
+      for(var i=0; i<tr.length; i++){
+        let td = tr[i].getElementsByTagName("td")[0];
+        if(td){
+          let textvalue = td.textContent || td.innerHTML;
+          if(textvalue.toUpperCase().indexOf(filter) > -1){
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    </script>
+
+    <footer>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
